@@ -13,14 +13,14 @@ function CharacterList() {
   }, []);
 
   return (
-    <div>{characters.map(character => {
+    <ul>{characters.map(character => {
       return (
       <li key={uuidv4()}>
         <h3>{character.character}</h3>
         <img src={character.image} alt={character.character}/>
         <p>{character.quote}</p>
       </li>)
-    })}</div>
+    })}</ul>
   )
 }
 
